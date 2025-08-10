@@ -35,7 +35,6 @@ from .advanced_metrics import (
 from .trend_detection import extract_trending_tokens
 from .top_trader_scanner import mimic_strategy, scan_market_with_kols
 from .innovative_analysis import cross_correlation_lag, hurst_exponent
-from .alternative_data import analyze_github_trend
 
 if __name__ == "__main__":
     raw = fetch_ohlcv(limit=300)
@@ -95,9 +94,6 @@ if __name__ == "__main__":
     topics = extract_topics([p["text"] for p in posts])
     print("Trending tokens from social posts:", trending)
     print("Extracted social topics:", topics)
-
-    gh_trend = analyze_github_trend("bitcoin/bitcoin")
-    print("GitHub star growth:", gh_trend["star_growth"])
 
     sent_series = [simple_sentiment_score(p["text"]) for p in posts]
     returns = [data[i]["close"] - data[i - 1]["close"] for i in range(1, len(data))]
