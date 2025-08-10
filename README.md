@@ -92,5 +92,4 @@ Recent enhancements showcase additional data dimensions for competitive edge:
 - Hurst exponent calculation to gauge trend persistence versus
   mean-reversion
 
-
 Run the example pipeline to see these analytics combined into a single flow.
