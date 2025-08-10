@@ -1,42 +1,10 @@
 ## Solana Sniper Bot
 
 #### Description:
-The Solana Sniper Bot aims to catch new pools on Raydium and Pumpfun, execute buy/sell transactions to make a profit. It allows for manual and automated trading, giving users the flexibility to optimize their strategies and maximize returns.
-
-https://github.com/user-attachments/assets/bf3063e7-4eae-443a-bd04-544e65b3a25f
-
-##### Mint: https://solscan.io/tx/QKbc9RxNZPE7peDNPnxBtPMux2HfTfn9QN2AwEr7Z5P1SS1qw42FYZcXqzkm9APVkTH88ieZU4PUaCU93yPNfGa
-##### Buy: https://solscan.io/tx/5NV4oAJacFfNffAb55hkb6LEKsSTjgMd8vTzTvDKBLQvQ5XCogizBLShnpF89J8tqFrYJAHaUS5tmXtb6SBpEdNz
-##### Sell: https://solscan.io/tx/5QDYSiST7KX9viNZXSeSATZYMJ5ioJrHJxqu9DVwFzREMarwwmaDXz7EYS1jC9oQq8z7V8GwTsEv94dSwdhU9s5b
 
 #### Features:
-- **Wallet Registration**: Register your own wallet for transactions.
-- **Track New Pools on Raydium**: Monitor new pools and filter them based on SOL amount. Filter feature can be disabled, and if disabled, catch all pools.
-- **Buy and Sell**: 
-  - Manual buy and sell for each pool which tracked.
-  - Show the status of buy/sell on every pools.
-  - Auto buy and sell with specific amount, time delay, profit, and loss percentages.
-  - Jito Mode: Execute transactions with Jito mode, allowing manual adjustment of Jito fees.
 
 ## Getting Started
-
-To use this Solana Bot Package, you will need to have a basic understanding of Solana, Raydium, and automated trading. Follow the instructions below to get started:
-
-1. **Clone the Repository**: 
-   ```bash
-   git clone https://github.com/earthzetaorg/solana-sniper-bot
-   ```
-2. **Install Dependencies**:
-   ```bash
-   cd solana-sniper-bot
-   npm install
-   ```
-3. **Configure Your Wallet**: Update the configuration file with your wallet details and desired settings.
-
-4. **Run the Bots**:
-     ```bash
-     npm run start
-     ```
 
 ## Configuration Guide
 
