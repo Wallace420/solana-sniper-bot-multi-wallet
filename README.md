@@ -1,4 +1,4 @@
-## Solana Sniper Bot
+## Solana Advanced Trading Tool - TOTE (TOP OF THE EDGE)
 
 #### Description:
 
