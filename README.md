@@ -87,3 +87,51 @@ Telegram: https://t.me/earthzeta
     <a href="mailto:johncriswick25@gmail.com" target="_blank"><img alt="Email"
         src="https://img.shields.io/badge/Gmail-CE5753?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 </div>
+
+## Analysis Pipeline (Experimental)
+
+An experimental Python-based pipeline showcases data ingestion from Binance, simple feature engineering, a naive sentiment analyzer and a basic backtesting engine. Run the example to see a full workflow:
+
+```bash
+python -m analysis.example_pipeline
+```
+
+This is a starting point for integrating alternative data sources and advanced analytics into the trading stack. A lightweight
+Solana RPC helper rotates across endpoints from providers such as Helius, QuickNode or public RPC nodes and falls back to
+offline defaults if none respond.
+
+The pipeline now also includes Bollinger Bands, MACD calculations and a simple volatility regime detector that adapts moving
+average windows per regime for extra edge during backtests. A lightweight wallet
+analysis helper fetches transaction histories, aggregates token interactions and
+surfaces repeating patterns so KOL or insider wallets can be monitored for early
+signals.
+
+Recent enhancements showcase additional data dimensions for competitive edge:
+
+- trade-based metrics such as Fibonacci retracements, cumulative volume delta and
+  market-cap estimates via circulating supply fetches
+- holder concentration summaries to spot whale dominance or distribution trends
+- social-data aggregation across Twitter, Telegram, GitHub and news snippets to
+  extract trending tokens or narratives
+- wallet performance classification and ranking to highlight top traders versus
+  underperformers
+- KOL wallet scanner combining their recurring token patterns with social
+  trends to surface mimic signals
+- statistical price anomaly detection using z-scores to flag unusual moves
+- topic extraction on aggregated social posts to surface emergent narratives
+- grid-search optimizer that tunes regime-specific moving-average windows and
+  reports metrics like Sharpe ratio, max drawdown and win rate for deeper
+  backtest evaluations
+- walk-forward analyzer that repeatedly optimizes SMA windows on rolling
+  training sets and evaluates the best parameter out-of-sample for more robust
+  backtests
+- JSON cache for OHLCV and trade requests, enabling instant offline reuse of
+  previously fetched market data
+- cross-correlation analysis to spot leading relationships between price
+  returns and social sentiment
+- Hurst exponent calculation to gauge trend persistence versus
+  mean-reversion
+- GitHub repository tracker that records star and fork growth as a proxy
+  for developer interest in a project
+
+Run the example pipeline to see these analytics combined into a single flow.
